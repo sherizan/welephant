@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+@import "normalize";
+@import "bourbon";
+@import "bitters/bitters";
+@import "neat";
+
+@import "partials/layout";
+@import "partials/nav";
+@import "partials/footer";
+
+$white: #FFF;
+$black: #333;
+$blue: #1D62F0;
+
+body {
+  background: url(../img/bg-main-02.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  font-family: "europa", Helvetica, sans-serif;
+  color: $white; }
+
+h1 {
+  color: rgba(0, 0, 0, .3);
+  font-weight: bold;
+  color: $white;
+  font-size: 32px;
+  letter-spacing: -1px;
+  line-height: 40px;
+  // text-transform: uppercase;
+  // text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+  background: url("../img/logo-welephant-03.png") no-repeat center 100px;
+  padding: 310px 0 10px;
+  margin: 0; 
+}
+
+h5{
+  padding: 10px 10px;
+}
+
+.btn {
+  @include button(#333);
+}
+
+a {
+  color: $white;
+}
+
+a:hover {
+  color: #CCC;
+}
+
+div {
+  padding: 20px 30px;
+  p {
+    padding: 20px 20px;
+    }
+}
+
+.lang {
+  display: block;
+  float: right;
+}
+
+li {
+  display: inline-block;
+}
+
+/* MIDDLEMAN 
+
+.doc {
+  font-size: 14px;
+  margin: 0; }
+  .doc:before,
+  .doc:after {
+    opacity: .2;
+    padding: 6px;
+    font-style: normal;
+    position: relative;
+    content: "•"; }
+  .doc a {
+    color: rgba(0, 0, 0, 0.3); }
+    .doc a:hover {
+      color: #666; }
+
+.welcome {
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: .9s; }
+
+@-webkit-keyframes welcome {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   -webkit-transform: scale(0);
+   opacity: 0;
+  }
+  82.5% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+*/
